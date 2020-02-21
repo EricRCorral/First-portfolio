@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/EC-icon-transparent.png" type="image/x-icon">
 
     <!-- Bootstrap -->
 
@@ -23,20 +23,223 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Eric Corral</title>
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Carter+One&display=swap" rel="stylesheet">
+
+    <title>Eric Corral | Portfolio</title>
 
 </head>
 
 <body>
 
-    <h1>hello world ¿? !</h1>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container px-md-5 mx-md-5">
+            <a href="#"><img src="assets/images/EC-icon-transparent.png" style="width: 80px; height: 80px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-caret-square-down fa-2x"></i>
+              </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutme">About me</a>
+                    </li>
+                    <li class="nav-item px-md-3 px-lg-4 px-0">
+                        <a class="nav-link" href="#works">Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+
+    <div id='home' class="text-center">
+        <h2 class="home-text" data-aos="fade-down" data-aos-duration="1000">
+            Eric Corral
+        </h2>
+        <h2 class="pt-4" data-aos="fade-in" data-aos-delay="1000" data-aos-duration="1000 ">Front end developer & Self-taught learner</h2>
+
+    </div>
+
+    <!-- About me -->
+
+    <div id="aboutme" class="container">
+        <h1 class="text-center py-4 ">About me</h1>
+
+        <div class="row align-items-center" data-aos="fade-up">
+            <div class="col-lg-4 ">
+                <img src="assets/images/about-me-perfil.jpg " class="aboutme-image rounded-pill mb-4 img-fluid ">
+            </div>
+
+            <div class="col-lg-4 ">
+                <h3>¿ Quien soy ?</h3>
+                <p class="py-3 "> ¡ Hola ! soy Eric, vivo en GBA Norte, tengo 25 años y soy autodidacta del desarrollo Front End.</p>
+                <h3>¿ Cuando comence a estudiar desarrollo web ?</h3>
+                <p class="py-3 ">Comence en agosto del 2019 con cursos online gratuitos y pagos. Me gusta sumar conocimientos constantemente por eso me dedico a estudiar entre 6 y 8hs diarias.</p>
+            </div>
+            <div class="col-lg-4 ">
+                <h3>¿ Que hago cuando no estoy estudiando ?</h3>
+                <p class="py-3 ">Me gusta mucho la actividad fisica y las artes marciales, por eso entreno Brazilian Jiu Jitsu y MMA, ademas de entrenar en casa. Tambien disfruto de ver peliculas antes de dormir, jugar videojuegos y eventualmente ir a un taller de teatro.
+                    Los fines de semana suelo salir del depto para pasar tiempo en familia.</p>
+            </div>
+        </div>
+        <h3>¿ Que tecnologias manejo ?</h3>
+        <div class="row py-3 text-center " data-aos="fade-up">
+            <div class="col-6 ">
+                <img class="image-skill py-2 m-md-4 " src="assets/images/html-icon.png ">
+                <img class="image-skill py-2 m-md-4 " src="assets/images/js-icon.png ">
+                <img class="image-skill py-2 m-md-4 " src="assets/images/angular-icon.png ">
+                <img class="image-skill py-2 m-md-4 " src="assets/images/bootstrap-icon.png ">
+            </div>
+            <div class="col-6 ">
+                <img class="image-skill py-2 m-md-4 " src="assets/images/css-icon.png ">
+                <img class="image-skill py-2 m-md-4 " src="assets/images/typescript-icon.png ">
+                <img class="image-skill py-2 m-md-4 " src="assets/images/github-icon.png ">
+                <img class="image-skill py-2 m-md-4 " src="assets/images/firebase-icon-2.png ">
+            </div>
+        </div>
+    </div>
+
+    <!-- Works -->
+
+    <h1 id="works" class="text-center my-5 ">Works</h1>
+
+    <div class="container px-0 works-background" data-aos="fade-up">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade " data-ride="carousel">
+            <ol class="carousel-indicators ">
+                <li data-target="#carouselExampleCaptions " data-slide-to="0 " class="active "></li>
+                <li data-target="#carouselExampleCaptions " data-slide-to="1 "></li>
+                <li data-target="#carouselExampleCaptions " data-slide-to="2 "></li>
+                <li data-target="#carouselExampleCaptions " data-slide-to="3 "></li>
+                <li data-target="#carouselExampleCaptions " data-slide-to="4 "></li>
+                <li data-target="#carouselExampleCaptions " data-slide-to="5 "></li>
+                <li data-target="#carouselExampleCaptions " data-slide-to="6 "></li>
+                <!-- <li data-target="#carouselExampleCaptions " data-slide-to="7 "></li>
+                <li data-target="#carouselExampleCaptions " data-slide-to="8 "></li> -->
+            </ol>
+            <div class="carousel-inner ">
+                <div class="carousel-item active ">
+                    <a href="https://github.com/EricRCorral/AuthMaps " target="_blank "><img src="assets/images/AuthMaps.png " class="d-block w-100 image-carousel "></a>
+                    <div class="carousel-caption text-dark ">
+                        <h2>AuthMaps</h2>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <a href="https://EricRCorral.github.io/SPA " target="_blank "><img src="assets/images/ComicApp.png " class="d-block w-100 image-carousel "></a>
+                    <div class="carousel-caption ">
+                        <h2>SPA</h2>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <a href="https://github.com/EricRCorral/Firechat " target="_blank "><img src="assets/images/Firechat.png " class="d-block w-100 image-carousel "></a>
+                    <div class="carousel-caption ">
+                        <h2>Firechat</h2>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <a href="https://github.com/EricRCorral/Heartstone-Cards " target="_blank "><img src="assets/images/HeartstoneCards.png " class="d-block w-100 image-carousel "></a>
+                    <div class="carousel-caption text-warning ">
+                        <h2>HSCardsApp</h2>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <a href="https://github.com/EricRCorral/ImagenesFirebase " target="_blank "><img src="assets/images/ImagenesFirebase.png " class="d-block w-100 image-carousel "></a>
+                    <div class="carousel-caption text-danger ">
+                        <h2>ImgFirebase</h2>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <a href="https://github.com/EricRCorral/ListaTareasApp " target="_blank "><img src="assets/images/ListaDeTareasApp.png " class="d-block w-100 image-carousel "></a>
+                    <div class="carousel-caption text-success ">
+                        <h2>ToDoApp</h2>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <a href="https://github.com/EricRCorral/TMovieDB-App " target="_blank "><img src="assets/images/PeliculasApp.png " class="d-block w-100 image-carousel "></a>
+                    <div class="carousel-caption ">
+                        <h2>MoviesApp</h2>
+                    </div>
+                </div>
+                <!-- <div class="carousel-item ">
+                    <a href="# " target="_blank "><img src="assets/images/CryOfFear.png " class="d-block w-100 image-carousel "></a>
+                    <div class="carousel-caption ">
+                        <h2>Template 1</h2>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <a href="# " target="_blank "><img src="assets/images/Gourmetaurant.png " class="d-block w-100 image-carousel "></a>
+                    <div class="carousel-caption ">
+                        <h2>Template 2</h2>
+                    </div>
+                </div> -->
+            </div>
+            <a class="carousel-control-prev " href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon " aria-hidden="true "></span>
+                <span class="sr-only ">Previous</span>
+            </a>
+            <a class="carousel-control-next " href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon " aria-hidden="true "></span>
+                <span class="sr-only ">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+
+    <h1 id="contact" class="text-center my-5 ">Contact me !</h1>
+
+    <div class="container">
+        <div class="d-flex ">
+            <div class="col-6 text-center " data-aos="flip-left">
+                <a class="text-white " href="https://www.linkedin.com/in/eric-corral-906364192/ " target="_blank "><i class="fab fa-linkedin fa-5x  d-none d-md-inline-block"></i></a>
+                <a class="text-white " href="https://www.linkedin.com/in/eric-corral-906364192/ " target="_blank "><i class="fab fa-linkedin fa-2x  d-md-none"></i></a>
+                <p>
+                    Linkedin
+                </p>
+            </div>
+            <div class="col-6 text-center" data-aos="flip-right">
+                <a class="text-white " href="https://github.com/EricRCorral " target="_blank "><i class="fab fa-github fa-5x  d-none d-md-inline-block"></i></a>
+                <a class="text-white " href="https://github.com/EricRCorral " target="_blank "><i class="fab fa-github fa-2x d-md-none"></i></a>
+                <p>
+                    Github
+                </p>
+            </div>
+        </div>
+        <div class="d-flex py-4 ">
+            <div class="col-6 text-center" data-aos="flip-left">
+                <i class="fas fa-envelope fa-5x  d-none d-md-inline-block"></i>
+                <i class="fas fa-envelope fa-2x  d-md-none"></i>
+                <p>
+                    <small>eric-wil@hotmail.com</small>
+                </p>
+            </div>
+            <div class="col-6 text-center" data-aos="flip-right">
+                <i class="fas fa-phone-square fa-5x d-none d-md-inline-block"></i>
+                <i class="fas fa-phone-square fa-2x  d-md-none"></i>
+                <p>
+                    <small>+54 011 30131603</small>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="text-center border-top "><small>© 2020 Portfolio of Eric Corral</small></footer>
 
     <!-- Jquery, Popper, BS y AOS -->
 
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/aos/dist/aos.js"></script>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js "></script>
+    <script src="node_modules/popper.js/dist/popper.min.js "></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
+    <script src="node_modules/aos/dist/aos.js "></script>
     <script>
         AOS.init();
     </script>

@@ -1,316 +1,166 @@
-    /*----------------- All devices -----------------*/
-    
-    html,
-    body {
-        height: 100%;
-        scroll-behavior: smooth;
-        font-size: 20px;
-        font-family: 'Times New Roman', Times, serif;
+/*----------------- All devices -----------------*/
+
+
+/* Colors pallete */
+
+#E53434 #F47033 #F2E1AE
+/* --Colors pallete-- */
+
+html,
+body {
+    height: 100%;
+    font-size: 20px;
+    font-family: 'Carter One', cursive;
+    color: white;
+    background-image: linear-gradient( white, #F2E1AE, #F47033, #E53434);
+    background-attachment: fixed;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#home {
+    height: 100vh;
+}
+
+.works-background {
+    -webkit-box-shadow: 0px 0px 160px 25px rgba(0, 0, 0, .7);
+    -moz-box-shadow: 0px 0px 160px 25px rgba(0, 0, 0, .7);
+    box-shadow: 0px 0px 160px 25px rgba(0, 0, 0, .7);
+}
+
+
+/* Texts */
+
+.nav-link {
+    color: #F47033;
+}
+
+.home-text {
+    padding-top: 40vh;
+}
+
+h3 {
+    text-align: center;
+}
+
+h1 {
+    text-shadow: 5px 5px #F47033;
+}
+
+
+/* ---Texts--- */
+
+
+/*----------------- 425 or less devices -----------------*/
+
+@media screen and (max-width: 425px) {
+    /* Texts */
+    .nav-link:hover {
+        color: #F47033;
     }
-    /* Texts and button */
-    
-    .text-home {
-        font-size: 60px;
+    .home-text {
+        font-size: 55px;
     }
-    
-    .nav-link {
-        color: white;
-    }
-    
-    .text-menu {
-        text-decoration-line: underline;
-    }
-    
-    #contact-button {
-        color: white;
-        background-color: black;
-        transition: 1s ease;
-        -webkit-transition: 1s ease;
-    }
-    
-    #contact-button:hover {
-        color: black;
-        background-color: orangered;
-    }
-    
-    .fas {
-        color: orangered;
-    }
-    
-    .fab {
-        color: orangered;
+    /* --Texts-- */
+    /* Images and icons */
+    .fa-caret-square-down {
+        color: #F47033;
         transition: .5s ease;
         -webkit-transition: .5s ease;
     }
-    
-    .fab:hover {
-        transform: scale(1.5);
-        -webkit-transform: scale(1.5);
+    .fa-caret-square-down:hover {
+        color: #E53434;
+        transform: rotate(180deg);
     }
-    /* ---Texts--- */
-    /* Images */
-    
-    .menuNavigation {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .about-images {
-        width: 250px;
+    .image-carousel {
         height: 250px;
-        transition: 1s ease;
-        -webkit-transition: 1s ease;
     }
-    
-    .img-carousel {
-        height: 130vh;
+    .image-skill {
+        width: 95px;
+        height: 95px;
     }
-    
-    .img-menu {
-        width: 255px;
-        height: 255px;
+    .fa-linkedin {
+        color: #0e76a8;
+    }
+    .fa-github {
+        color: black;
+    }
+    .fa-phone-square {
+        color: green;
+    }
+    /* --Images and icons-- */
+}
+
+
+/*----------------- 426 or more devices  -----------------*/
+
+@media screen and (min-width: 426px) {
+    /* Texts */
+    .nav-link,
+    .fa-linkedin,
+    .fa-github,
+    .fa-envelope,
+    .fa-phone-square {
         transition: .5s ease;
         -webkit-transition: .5s ease;
     }
-    
-    .hover-overlay:hover .overlay {
-        opacity: 0.5;
+    .nav-link:hover {
+        color: #E53434;
+        transform: scale(1.3);
+        -webkit-transform: scale(1.3);
     }
-    
-    .hover-text {
-        color: orangered;
-        font-size: 50px;
-        position: relative;
-        top: 35%;
+    .home-text {
+        font-size: 100px;
     }
-    
-    .overlay {
-        position: absolute;
-        border-radius: 100%;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: white;
+    /* --Texts-- */
+    /* Images and icons */
+    .image-carousel {
+        height: 500px;
     }
-    
-    .hover-news {
+    .image-skill {
+        width: 190px;
+        height: 190px;
         transition: 1s ease;
         -webkit-transition: 1s ease;
     }
-    
-    .hover-news:hover {
-        opacity: 0.7;
+    .image-skill:hover {
         transform: scale(1.1);
-        -webkit-transform: scale(1.1);
     }
-    /* ---Images--- */
-    /* Paddings */
-    
-    .padding-carousel {
-        padding-bottom: 18rem;
+    .fa-linkedin:hover {
+        color: #0e76a8;
+        transform: rotateY(360deg);
+        -webkit-transform: rotateY(360deg);
     }
-    /* ---Paddings--- */
-    /* Backgrounds */
-    
-    .background-grey {
-        background-color: #f1f1f1;
+    .fa-github:hover {
+        color: black;
+        transform: rotateY(360deg);
+        -webkit-transform: rotateY(360deg);
     }
-    
-    #menu,
-    #news {
-        transform: skew(0deg, 5deg);
+    .fa-phone-square:hover {
+        color: green;
+        transform: rotateY(360deg);
+        -webkit-transform: rotateY(360deg);
     }
-    
-    #about,
-    #contact {
-        transform: skew(0deg, -5deg);
+    .fa-envelope:hover {
+        color: red;
+        transform: rotateY(360deg);
+        -webkit-transform: rotateY(360deg);
     }
-    /* ---Backgrounds--- */
-    /* Animation */
-    
-    .animation-blink {
-        animation-name: "animation-blink";
-        animation-iteration-count: infinite;
-        animation-duration: 3s;
-        -webkit-animation-name: "animation-blink";
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-duration: 3s;
+    /* --Images and icons-- */
+}
+
+
+/* 768 devices */
+
+@media screen and (width: 768px) {
+    .aboutme-image {
+        width: 400px;
+        height: 500px;
+        margin-left: 160px;
     }
-    
-    @keyframes animation-blink {
-        0% {
-            color: orangered;
-        }
-        20% {
-            color: transparent;
-        }
-        100% {
-            color: orangered;
-        }
-    }
-    /* ---Animation--- */
-    /*----------------- 768 or less devices -----------------*/
-    
-    @media screen and (max-width: 768px) {
-        /* nav {
-        background-color: black;
-    } */
-        .nav-link:hover {
-            color: orangered;
-        }
-        .img-carousel {
-            height: 80vh;
-        }
-        .text-home {
-            font-size: 30px;
-        }
-        .padding-carousel {
-            padding-bottom: 8rem;
-        }
-        .background-skew {
-            background: #f1f1f1;
-            -webkit-transform: skew(0deg, -5deg) translateY(10vh);
-            transform: skew(0deg, -5deg) translateY(10vh);
-        }
-        .background-skew-2 {
-            background: #f1f1f1;
-            -webkit-transform: skew(0deg, 5deg) translateY(30vh);
-            transform: skew(0deg, 5deg) translateY(30vh);
-        }
-        .background-skew-3 {
-            background: #f1f1f1;
-            -webkit-transform: skew(0deg, 5deg);
-            transform: skew(0deg, 5deg);
-        }
-        .overlay {
-            width: 80%;
-            left: 10%;
-        }
-        .margin-news {
-            margin-top: 8rem;
-        }
-    }
-    /*----------------- 769 or more devices  -----------------*/
-    
-    @media screen and (min-width: 769px) {
-        .nav-link {
-            transition: .5s ease;
-            -webkit-transition: .5s ease;
-        }
-        .nav-link:hover {
-            color: orangered;
-            transform: scale(1.3);
-            -webkit-transform: scale(1.3);
-        }
-        .background-skew {
-            background: #f1f1f1;
-            -webkit-transform: skew(0deg, -5deg) translateY(20vh);
-            transform: skew(0deg, -5deg) translateY(20vh);
-        }
-        .background-skew-2 {
-            background: #f1f1f1;
-            -webkit-transform: skew(0deg, 5deg) translateY(45vh);
-            transform: skew(0deg, 5deg) translateY(45vh);
-        }
-        .background-skew-3 {
-            background: #f1f1f1;
-            -webkit-transform: skew(0deg, 5deg);
-            transform: skew(0deg, 5deg);
-        }
-        /* About hovers */
-        .about-images-1:hover {
-            transform: scale(2, 2) translate(62.5px, 62.5px);
-        }
-        .about-images-2:hover {
-            transform: scale(2, 2) translate(-62.5px, 62.5px);
-        }
-        .about-images-3:hover {
-            transform: scale(2, 2) translate(62.5px, -62.5px);
-        }
-        .about-images-4:hover {
-            transform: scale(2, 2) translate(-62.5px, -62.5px);
-        }
-        /* ---About hovers--- */
-        .overlay {
-            width: 90%;
-            left: 5%;
-        }
-        /* Margins */
-        .margin-news {
-            margin-top: 15rem;
-        }
-    }
-    /*----------------- 375 devices -----------------*/
-    
-    @media screen and (width: 375px) {
-        .overlay {
-            width: 68%;
-            left: 16%;
-        }
-    }
-    /*----------------- 425 devices -----------------*/
-    
-    @media screen and (width: 425px) {
-        .overlay {
-            width: 60%;
-            left: 20%;
-        }
-    }
-    /*----------------- 768 devices -----------------*/
-    
-    @media screen and (width:768px) {
-        .about-images {
-            width: 150px;
-            height: 150px;
-        }
-        /* About hovers */
-        .about-images-1:hover {
-            transform: scale(2, 2) translate(37.5px, 37.5px);
-        }
-        .about-images-2:hover {
-            transform: scale(2, 2) translate(-37.5px, 37.5px);
-        }
-        .about-images-3:hover {
-            transform: scale(2, 2) translate(37.5px, -37.5px);
-        }
-        .about-images-4:hover {
-            transform: scale(2, 2) translate(-37.5px, -37.5px);
-        }
-        /* ---About hovers--- */
-        .overlay {
-            width: 35.5%;
-            left: 32.25%;
-        }
-        /* Margins*/
-        .margin-news {
-            margin-top: 15rem;
-        }
-    }
-    /*----------------- 1024 devices -----------------*/
-    
-    @media screen and (width: 1024px) {
-        .about-images {
-            width: 150px;
-            height: 150px;
-        }
-        /* About hovers */
-        .about-images-1:hover {
-            transform: scale(2, 2) translate(37.5px, 37.5px);
-        }
-        .about-images-2:hover {
-            transform: scale(2, 2) translate(-37.5px, 37.5px);
-        }
-        .about-images-3:hover {
-            transform: scale(2, 2) translate(37.5px, -37.5px);
-        }
-        .about-images-4:hover {
-            transform: scale(2, 2) translate(-37.5px, -37.5px);
-        }
-        /* ---About hovers--- */
-        .overlay {
-            width: 107%;
-            left: 5%;
-        }
-    }
+}
+
+
+/* ---768 devices--- */
