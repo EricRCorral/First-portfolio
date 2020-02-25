@@ -56,6 +56,11 @@ h1 {
 /*----------------- 425 or less devices -----------------*/
 
 @media screen and (max-width: 425px) {
+    html,
+    body {
+        background-image: linear-gradient( #F2E1AE, #F47033, #E53434);
+        background-attachment: fixed;
+    }
     /* Texts */
     .nav-link:hover {
         color: #F47033;
