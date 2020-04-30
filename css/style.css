@@ -10,9 +10,9 @@ html,
 body {
     height: 100%;
     font-size: 20px;
-    font-family: 'Carter One', cursive;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
-    background-image: linear-gradient( #F2E1AE, #F47033, #E53434);
+    background-image: linear-gradient( #F2E1AE, #f47033, #E53434);
     background-attachment: fixed;
 }
 
@@ -24,7 +24,7 @@ html {
     height: 100vh;
 }
 
-.works-background {
+.projects-background {
     -webkit-box-shadow: 0px 0px 160px 25px rgba(0, 0, 0, .7);
     -moz-box-shadow: 0px 0px 160px 25px rgba(0, 0, 0, .7);
     box-shadow: 0px 0px 160px 25px rgba(0, 0, 0, .7);
@@ -41,7 +41,7 @@ html {
     padding-top: 40vh;
 }
 
-h3 {
+h2 {
     text-align: center;
 }
 
@@ -101,14 +101,8 @@ h1 {
     }
     /* --Texts-- */
     /* Images and icons */
-    .fa-caret-square-down {
-        color: #F47033;
-        transition: .5s ease;
-        -webkit-transition: .5s ease;
-    }
-    .fa-caret-square-down:hover {
+    .fa-bars {
         color: #E53434;
-        transform: rotate(180deg);
     }
     .image-carousel {
         height: 250px;
@@ -152,6 +146,10 @@ h1 {
     }
     /* --Texts-- */
     /* Images and icons */
+    .aboutme-image {
+        width: 20%;
+        border-radius: 3%;
+    }
     .image-carousel {
         height: 500px;
     }

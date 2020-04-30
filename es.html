@@ -27,7 +27,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Carter+One&display=swap" rel="stylesheet">
 
-    <title>Eric Corral | Portfolio</title>
+    <title>Eric Corral</title>
 
 </head>
 
@@ -39,7 +39,7 @@
         <div class="container px-md-5 mx-md-5">
             <a href="#"><img src="assets/images/EC-icon-transparent.png" style="width: 80px; height: 80px;"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-caret-square-down fa-2x"></i>
+                <i class="fas fa-bars fa-2x"></i>
               </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -48,7 +48,7 @@
                         <a class="nav-link" href="#aboutme">Sobre mi</a>
                     </li>
                     <li class="nav-item px-md-3 px-lg-4 px-0">
-                        <a class="nav-link" href="#works">Trabajos</a>
+                        <a class="nav-link" href="#projects">Proyectos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contacto</a>
@@ -76,24 +76,21 @@
     <div id="aboutme" class="container">
         <h1 class="text-center py-4 ">Sobre mi</h1>
 
-        <div class="row align-items-center" data-aos="fade-up">
-            <div class="col-lg-4 ">
-                <img src="assets/images/about-me-perfil.jpg " class="aboutme-image rounded-pill mb-4 img-fluid ">
-            </div>
+        <div class="d-md-flex mb-5 mt-3 px-3 align-items-center">
 
-            <div class="col-lg-4 ">
-                <h3>¿ Quien soy ?</h3>
-                <p class="py-3 "> ¡ Hola ! soy Eric, vivo en GBA Norte, tengo 25 años y soy autodidacta del desarrollo front end.</p>
-                <h3>¿ Cuando comence a estudiar desarrollo web ?</h3>
-                <p class="py-3 ">Comence en agosto del 2019 con cursos online gratuitos y pagos. Me gusta sumar conocimientos constantemente por eso me dedico a estudiar entre 6 y 8hs diarias.</p>
-            </div>
-            <div class="col-lg-4 ">
-                <h3>¿ Que hago cuando no estoy estudiando ?</h3>
-                <p class="py-3 ">Me gusta mucho la actividad fisica y las artes marciales, por eso entreno Brazilian Jiu Jitsu y MMA, ademas de entrenar en casa. Tambien disfruto de ver peliculas antes de dormir, jugar videojuegos y eventualmente ir a un taller de teatro.
-                    Los fines de semana suelo salir del depto para pasar tiempo en familia.</p>
-            </div>
+            <img src="assets/images/about-me-perfil.jpg" alt="Eric" class="img-fluid aboutme-image">
+
+            <ul>
+                <li class="mt-3 mt-md-0">Aprendiendo desarrollo web desde agosto del 2019</li>
+                <li class="my-3">Vivo en Bella Vista, Buenos Aires</li>
+                <li>Nivel de <a class="text-decoration-none text-dark" href="https://www.efset.org/cert/GsPYh7" target="_blank">ingles avanzado</a></li>
+                <li class="my-3">Desarrolle aplicaciones con autentificación, consumo de APIs y base de datos NoSQL</li>
+                <li>En busqueda de mi primer experiencia laboral IT</li>
+                <li class="mt-3">Mas información en mi <a href="assets/images/CV_Eric Corral_Front_End.pdf" class="text-decoration-none text-dark" download>cv</a></li>
+            </ul>
         </div>
-        <h3>¿ Que tecnologias manejo ?</h3>
+
+        <h2>Tecnologías que manejo</h2>
         <div class="row py-3 text-center " data-aos="fade-up">
             <div class="col-6 ">
                 <img class="image-skill py-2 m-md-4 " src="assets/images/html-icon.png ">
@@ -110,11 +107,11 @@
         </div>
     </div>
 
-    <!-- Works -->
+    <!-- Proyectos -->
 
-    <h1 id="works" class="text-center my-5 ">Trabajos</h1>
+    <h1 id="projects" class="text-center my-5 ">Proyectos</h1>
 
-    <div class="container px-0 works-background" data-aos="fade-up">
+    <div class="container px-0 projects-background" data-aos="fade-up">
         <div id="carouselExampleCaptions" class="carousel slide carousel-fade " data-ride="carousel">
             <ol class="carousel-indicators ">
                 <li data-target="#carouselExampleCaptions " data-slide-to="0 " class="active "></li>
@@ -124,33 +121,12 @@
                 <li data-target="#carouselExampleCaptions " data-slide-to="4 "></li>
                 <li data-target="#carouselExampleCaptions " data-slide-to="5 "></li>
                 <li data-target="#carouselExampleCaptions " data-slide-to="6 "></li>
-                <li data-target="#carouselExampleCaptions " data-slide-to="7 "></li>
-                <li data-target="#carouselExampleCaptions " data-slide-to="8 "></li>
-                <li data-target="#carouselExampleCaptions " data-slide-to="9 "></li>
             </ol>
-            <div class="carousel-inner ">
-                <div class="carousel-item active ">
-                    <a href="https://ericrcorral.github.io/AuthMaps " target="_blank "><img src="assets/images/AuthMaps.png " class="d-block w-100 image-carousel "></a>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="https://todolistmaps-d435d.web.app/signIn" target="_blank "><img src="assets/images/StoreList.png" class="d-block w-100 image-carousel "></a>
                     <div class="carousel-caption text-dark ">
-                        <h2>AuthMaps</h2>
-                    </div>
-                </div>
-                <div class="carousel-item ">
-                    <a href="https://ericrcorral.github.io/SPA " target="_blank "><img src="assets/images/ComicApp.png " class="d-block w-100 image-carousel "></a>
-                    <div class="carousel-caption ">
-                        <h2>SPA</h2>
-                    </div>
-                </div>
-                <div class="carousel-item ">
-                    <a href="https://ericrcorral.github.io/Firechat/" target="_blank "><img src="assets/images/Firechat.png " class="d-block w-100 image-carousel "></a>
-                    <div class="carousel-caption ">
-                        <h2>Firechat</h2>
-                    </div>
-                </div>
-                <div class="carousel-item ">
-                    <a href="https://ericrcorral.github.io/Heartstone-Cards " target="_blank "><img src="assets/images/HeartstoneCards.png " class="d-block w-100 image-carousel "></a>
-                    <div class="carousel-caption text-warning ">
-                        <h2>HSCardsApp</h2>
+                        <h2>StoreList</h2>
                     </div>
                 </div>
                 <div class="carousel-item ">
@@ -174,19 +150,19 @@
                 <div class="carousel-item ">
                     <a href="https://ericrcorral.github.io/Ford-Ka-Replica" target="_blank "><img src="assets/images/template-plan-ford-ka.png" class="d-block w-100 image-carousel "></a>
                     <div class="carousel-caption ">
-                        <h2>Template 1</h2>
+                        <h2>Plan Ford-Ka Clon</h2>
                     </div>
                 </div>
                 <div class="carousel-item ">
                     <a href="https://ericrcorral.github.io/Gourmetaurant" target="_blank "><img src="assets/images/Gourmetaurant.png " class="d-block w-100 image-carousel "></a>
                     <div class="carousel-caption ">
-                        <h2>Template 2</h2>
+                        <h2>Template - Gourmetaurant</h2>
                     </div>
                 </div>
                 <div class="carousel-item ">
                     <a href="https://ericrcorral.github.io/CryOfFear" target="_blank "><img src="assets/images/CryOfFear.png " class="d-block w-100 image-carousel "></a>
                     <div class="carousel-caption ">
-                        <h2>Template 3</h2>
+                        <h2>Template - COF</h2>
                     </div>
                 </div>
             </div>
@@ -227,14 +203,15 @@
                 <i class="fas fa-envelope fa-5x  d-none d-md-inline-block"></i>
                 <i class="fas fa-envelope fa-2x  d-md-none"></i>
                 <p>
-                    <small>eric-wil@hotmail.com</small>
+                    <a class="text-white text-decoration-none" href="mailto:"><small>eric-wil@hotmail.com</small></a>
                 </p>
             </div>
             <div class="col-6 text-center" data-aos="flip-right">
                 <i class="fas fa-phone-square fa-5x d-none d-md-inline-block"></i>
                 <i class="fas fa-phone-square fa-2x  d-md-none"></i>
                 <p>
-                    <small>+54 011 30131603</small>
+                    <a class="text-white text-decoration-none" href="tel:+54 011 30131603"><small>+54 011 30131603</small></a>
+
                 </p>
             </div>
         </div>
@@ -242,7 +219,7 @@
 
     <!-- Footer -->
 
-    <footer class="text-center border-top "><small>© 2020 Portfolio de Eric Corral</small></footer>
+    <footer class="text-center border-top "><small>© 2020 Eric Corral</small></footer>
 
     <!-- Jquery, Popper, BS y AOS -->
 
