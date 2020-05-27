@@ -159,9 +159,6 @@ h1 {
         transition: 1s ease;
         -webkit-transition: 1s ease;
     }
-    .image-skill:hover {
-        transform: scale(1.1);
-    }
     .fa-linkedin:hover {
         color: #0e76a8;
         transform: rotateY(360deg);
